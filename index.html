@@ -8,34 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <script defer src="./index.js"></script>
 </head>
-<body>
+    <!-- Container -->
     <div class="container">
+        <!-- Form -->
         <form id="form" action="/">
+            <!-- Form Heading -->
             <h1>Registration</h1>
+            <!-- Username Label - Field - Error Text -->
             <div class="input-control">
                 <label for="username">Username</label>
                 <input id="username" name="username" type="text" onkeypress="validateInputs()">
                 <div class="error"></div>
             </div>
+            <!-- Email Label - Field - Error Text -->
             <div class="input-control">
                 <label for="email">Email</label>
                 <input id="email" name="email" type="text" onkeypress="validateInputs()">
                 <div class="error"></div>
             </div>
+            <!-- Password Label - Field - Error Text -->
             <div class="input-control">
                 <label for="password">Password</label>
                 <input id="password"name="password" type="password" onkeypress="validateInputs()">
                 <div class="error"></div>
             </div>
+            <!-- Confirm Password Label - Field - Error Text -->
             <div class="input-control">
-                <label for="password2">Password again</label>
+                <label for="password2">Confirm Password</label>
                 <input id="password2"name="password2" type="password" onkeypress="validateInputs()">
                 <div class="error"></div>
             </div>
+            <!-- Submit Button -->
             <button type="submit">Sign Up</button>
         </form>
     </div>
+    <script defer src="./index.js"></script>
 </body>
 </html>
